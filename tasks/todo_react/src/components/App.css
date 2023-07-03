@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* ----------------------------------------------------------user data----------------------------------*/
+/* ------------------------ Title */
+.titleClass{
+  margin: 5%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  font-size: xxx-large;
+  background-color: #f9004d;
+}
+.userInputClassContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f9004d;
+}
+
+.main-container{
+  display: grid;
+  margin: 5%;
+  padding: 5%;
+  background: #f9004d;
+}
+
+/* ------------------------ Input tag*/
+.userInputClassContainer input{
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #212121;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+.userInputClassContainer input:focus{
+  outline-color: white;
+  background-color: #212121;
+  color: #e8e8e8;
+  box-shadow: 5px 5px #888888;
+}
+
+/* ------------------------ Submit button tag*/
+.submitButtonClass {
+  margin-left: 38px;
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.submitButtonClass:hover{
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.submitButtonClass:active{
+  opacity: 0.5;
+}
+/* ----------------------------------------------------------Display data------------------------------------------------*/
+
+.displayUserDataClass{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ------------------------ checkbox */
+.displayUserDataClass, .checkBoxClass{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background: #606062;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.30), 0px 1px 1px rgba(0,5);
+}
+
+.displayUserDataClass input:checked ~ .checkmark {
+  background-image: linear-gradient(#b9e9b3,#a8e4a0)
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+ 
+.displayUserDataClass input:checked ~ .checkmark:after {
+  display: block;
+}
+ 
+.displayUserDataClass .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+.deleteIconClass{
+  height: 20px;
+} 
