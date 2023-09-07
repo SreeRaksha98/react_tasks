@@ -8,12 +8,13 @@ import reportWebVitals from './reportWebVitals';
 // import App from "./components/exercise_4/app"
 // import App from "./components/exercise_5/App"
 // import App from "./components/exercise_6/App"
-import JobAppComponent from "./components/exercise7_registrationFrom/App"
-
+// import JobAppComponent from "./components/exercise7_registrationFrom/App"
+// import App from "./components/exercise8_useState_hook/app"
+import App from "./components/exercise9_useEffect_hook/App"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <JobAppComponent/>
+      <App/>
   </React.StrictMode>
 );
 
